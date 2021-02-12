@@ -1,0 +1,7 @@
+---
+title: "About Bonnie the Dog"
+image: "bonbon.jpg"
+description: |
+  Bonnie is almost a year old and is simulataneously adorable and terrifyingly ferocious sometimes.
+---
+
