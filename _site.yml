@@ -8,8 +8,19 @@ navbar:
   right:
     - text: "Home"
       href: index.html
+    - text: "About Me"
+      href: about_me.html
     - text: "About my dog"
       href: about_bonnie.html
     - text: "Blog"
       href: blog.html
+    - text: "Projects"
+      menu:
+       - text: "CA Oil Spill Visualization"
+         href: oil_spill.html
+       - text: "Cowboy Songs Text Analysis"
+         href: a3_task3.html
+
+
+
 output: distill::distill_article
