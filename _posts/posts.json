@@ -1,0 +1,19 @@
+[
+  {
+    "path": "posts/2021-02-12-welcome/",
+    "title": "Welcome",
+    "description": "My first blog post.",
+    "author": [
+      {
+        "name": "AJ Zekanoski",
+        "url": {}
+      }
+    ],
+    "date": "2021-02-12",
+    "categories": [],
+    "contents": "\nI don’t know yet what I’m going to blog about. Posts will probably be about wild pigs, Bonnie the dog, and kayaking. Stay tuned\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-02-25T12:19:29-08:00",
+    "input_file": {}
+  }
+]
