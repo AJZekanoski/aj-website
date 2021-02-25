@@ -14,3 +14,4 @@ site: distill::distill_website
 ---
  
 I am a former wilderness guide somehow already in my second year of study at the Bren School of Environmental Science & Management. Currently I enjoy waging humanity's secret war against wild pigs and getting thrown off my kayak in rough waters.
+

@@ -1,7 +1,8 @@
 ---
-title: "welcome"
+title: "Welcome"
 description: |
-  A short description of the post.
+  My first blog post.
+theme: aj_theme.css
 author:
   - name: AJ Zekanoski
 date: 2021-02-12
@@ -15,8 +16,6 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
-
-Learn more about using Distill at <https://rstudio.github.io/distill>.
+I don't know yet what I'm going to blog about. Posts will probably be about wild pigs, Bonnie the dog, and kayaking. Stay tuned
 
 

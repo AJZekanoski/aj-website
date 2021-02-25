@@ -1,5 +1,6 @@
 name: "."
 title: "AJ Zekanoski"
+theme: aj_theme.css
 description: |
   AJ Zekanoski
 output_dir: "docs"
