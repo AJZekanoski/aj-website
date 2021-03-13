@@ -14,6 +14,8 @@ navbar:
       href: about_bonnie.html
     - text: "Projects"
       href: blog.html
+    - text: "Resume"
+      href: aj_resume.pdf
 
 
 
