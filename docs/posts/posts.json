@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/",
+    "title": "Spatial Data Visualization",
+    "description": "California Oil Spill Tracking Project.",
+    "author": [
+      {
+        "name": "AJ Zekanoski",
+        "url": {}
+      }
+    ],
+    "date": "2021-03-13",
+    "categories": [],
+    "contents": "\n\n\n#Read in Oil Spill Data\noil_spill <- read_sf(here(\"_posts\", \"Oil_Spill_Incident_Tracking_%5Bds394%5D-shp\"), layer = \"Oil_Spill_Incident_Tracking_%5Bds394%5D\") %>% \n  clean_names() %>% \n  rename(county = localecoun)\n\n\n\n\n\n#Read in California County Boundaries\nca_county <- read_sf(here(\"_posts\", \"ca_counties\"), layer = \"CA_Counties_TIGER2016\"\n) %>% \n  clean_names()\n\n#Set county crs to same as oil spill\nca_county <- st_transform(ca_county, st_crs(oil_spill))\n\n\n\n\n\n\n\n\n#looking at inland spills counts per county\ninland <- oil_spill %>% \n  filter(inlandmari == \"Inland\")\n\nca_inland <- ca_county %>% \n  st_join(inland)\n\ninland_spill <- ca_inland %>% \n  count(county)\n \nggplot(data = inland_spill) +\n  geom_sf(aes(fill = n), color = \"white\", size = 0.1) +\n  scale_fill_gradientn(colors = c(\"lightgray\",\"darkorange\",\"darkred\")) +\n  theme_minimal() +\n  labs(fill = \"Number of Oil Spills\",\n       title = \"Density of California Oil Spills by County\")\n\n\n\n\n\n\n\n",
+    "preview": "posts/spatial_data_files/figure-html5/unnamed-chunk-4-1.png",
+    "last_modified": "2021-03-13T12:24:52-08:00",
+    "input_file": "spatial_data.utf8.md"
+  },
+  {
     "path": "posts/2021-02-12-welcome/",
     "title": "Climatic Principle Components Analysis",
     "description": "PCA on four global climate variables for 243 countries.",

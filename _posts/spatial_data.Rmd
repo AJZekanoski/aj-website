@@ -1,0 +1,66 @@
+---
+title: "Spatial Data Visualization"
+description: |
+  California Oil Spill Tracking Project.
+theme: aj_theme.css
+author:
+  - name: AJ Zekanoski
+date: 2021-03-13
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, error = FALSE, message = FALSE)
+library(tidyverse)
+library(janitor)
+library(here)
+library(sf)
+library(tmap)
+library(gstat)
+library(stars)
+```
+
+```{r}
+#Read in Oil Spill Data
+oil_spill <- read_sf(here("_posts", "Oil_Spill_Incident_Tracking_%5Bds394%5D-shp"), layer = "Oil_Spill_Incident_Tracking_%5Bds394%5D") %>% 
+  clean_names() %>% 
+  rename(county = localecoun)
+```
+
+```{r}
+#Read in California County Boundaries
+ca_county <- read_sf(here("_posts", "ca_counties"), layer = "CA_Counties_TIGER2016"
+) %>% 
+  clean_names()
+
+#Set county crs to same as oil spill
+ca_county <- st_transform(ca_county, st_crs(oil_spill))
+
+```
+
+```{r}
+
+```
+
+```{r}
+#looking at inland spills counts per county
+inland <- oil_spill %>% 
+  filter(inlandmari == "Inland")
+
+ca_inland <- ca_county %>% 
+  st_join(inland)
+
+inland_spill <- ca_inland %>% 
+  count(county)
+ 
+ggplot(data = inland_spill) +
+  geom_sf(aes(fill = n), color = "white", size = 0.1) +
+  scale_fill_gradientn(colors = c("lightgray","darkorange","darkred")) +
+  theme_minimal() +
+  labs(fill = "Number of Oil Spills",
+       title = "Density of California Oil Spills by County")
+```
+
+
