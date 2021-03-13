@@ -85,9 +85,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Welcome</title>
+  <title>Climatic Principle Components Analysis</title>
 
-  <meta property="description" itemprop="description" content="My first blog post."/>
+  <meta property="description" itemprop="description" content="PCA on four global climate variables for 243 countries."/>
 
 
   <!--  https://schema.org/Article -->
@@ -96,26 +96,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <meta name="article:author" content="AJ Zekanoski"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Welcome"/>
+  <meta property="og:title" content="Climatic Principle Components Analysis"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="My first blog post."/>
+  <meta property="og:description" content="PCA on four global climate variables for 243 countries."/>
   <meta property="og:locale" content="en_US"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Welcome"/>
-  <meta property="twitter:description" content="My first blog post."/>
+  <meta property="twitter:title" content="Climatic Principle Components Analysis"/>
+  <meta property="twitter:description" content="PCA on four global climate variables for 243 countries."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","theme","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Welcome"]},{"type":"character","attributes":{},"value":["My first blog post.\n"]},{"type":"character","attributes":{},"value":["aj_theme.css"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["AJ Zekanoski"]}]}]},{"type":"character","attributes":{},"value":["2021-02-12"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","theme","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Climatic Principle Components Analysis"]},{"type":"character","attributes":{},"value":["PCA on four global climate variables for 243 countries.\n"]},{"type":"character","attributes":{},"value":["aj_theme.css"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["AJ Zekanoski"]}]}]},{"type":"character","attributes":{},"value":["2021-02-12"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["welcome_files/anchor-4.2.2/anchor.min.js","welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/distill-2.2.21/template.v2.js","welcome_files/header-attrs-2.6.6/header-attrs.js","welcome_files/jquery-1.11.3/jquery.min.js","welcome_files/popper-2.6.0/popper.min.js","welcome_files/tippy-6.2.7/tippy-bundle.umd.min.js","welcome_files/tippy-6.2.7/tippy-light-border.css","welcome_files/tippy-6.2.7/tippy.css","welcome_files/tippy-6.2.7/tippy.umd.min.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["data/sierra_amphibians.xlsx","data/world_env_vars.csv","welcome_files/anchor-4.2.2/anchor.min.js","welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/distill-2.2.21/template.v2.js","welcome_files/figure-html5/unnamed-chunk-1-1.png","welcome_files/figure-html5/unnamed-chunk-2-1.png","welcome_files/header-attrs-2.6.6/header-attrs.js","welcome_files/header-attrs-2.7/header-attrs.js","welcome_files/jquery-1.11.3/jquery.min.js","welcome_files/popper-2.6.0/popper.min.js","welcome_files/tippy-6.2.7/tippy-bundle.umd.min.js","welcome_files/tippy-6.2.7/tippy-light-border.css","welcome_files/tippy-6.2.7/tippy.css","welcome_files/tippy-6.2.7/tippy.umd.min.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1433,7 +1433,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="welcome_files/header-attrs-2.6.6/header-attrs.js"></script>
+  <script src="welcome_files/header-attrs-2.7/header-attrs.js"></script>
   <script src="welcome_files/jquery-1.11.3/jquery.min.js"></script>
   <script src="welcome_files/popper-2.6.0/popper.min.js"></script>
   <link href="welcome_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -1454,7 +1454,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Welcome","description":"My first blog post.","authors":[{"author":"AJ Zekanoski","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-02-12T00:00:00.000+00:00","citationText":"Zekanoski, 2021"}
+{"title":"Climatic Principle Components Analysis","description":"PCA on four global climate variables for 243 countries.","authors":[{"author":"AJ Zekanoski","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-02-12T00:00:00.000+00:00","citationText":"Zekanoski, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1464,10 +1464,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Welcome</h1>
+<h1>Climatic Principle Components Analysis</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>My first blog post.</p></p>
+<p><p>PCA on four global climate variables for 243 countries.</p></p>
 </div>
 
 <div class="d-byline">
@@ -1477,8 +1477,458 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
-<p>I don’t know yet what I’m going to blog about. Posts will probably be about wild pigs, Bonnie the dog, and kayaking. Stay tuned</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<h4 id="describe-the-data-and-the-variables-i-will-be-exploring.">Describe the data and the variables I will be exploring.</h4>
+<p>The dataset that I’m using for principle component analysis is a set of environmental and climatic variables for 243 countries that was compiled using the Google Earth Engine. While the original data frame has 27 different variables for each country, I’ve chosen to focus on and explore the relationships between four of them to see how they may influence one another. I’m going to evaluate the interactions of mean annual rainfall, percentage of cropland cover, percentage of tree canopy cover, and isothermality (annual mean temperature/mean monthly temperature range).</p>
+<h5 id="data-citation-gorelick-n.-hancher-m.-dixon-m.-ilyushchenko-s.-thau-d.-moore-r.-2017.-google-earth-engine-planetary-scale-geospatial-analysis-for-everyone.-remote-sensing-of-environment.">Data citation: Gorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D., &amp; Moore, R. (2017). Google Earth Engine: Planetary-scale geospatial analysis for everyone. Remote Sensing of Environment.</h5>
+<h4 id="read-in-the-global-climate-data-and-wrangle-to-set-up-for-principle-components-analysis.">Read in the global climate data and wrangle to set up for principle components analysis.</h4>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>world_data</span> <span class='op'>&lt;-</span> <span class='fu'>read_csv</span><span class='op'>(</span><span class='fu'><a href='https://here.r-lib.org//reference/here.html'>here</a></span><span class='op'>(</span><span class='st'>"_posts"</span>, <span class='st'>"2021-02-12-welcome"</span>, <span class='st'>"data"</span>, <span class='st'>"world_env_vars.csv"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/pkg/janitor/man/clean_names.html'>clean_names</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='va'>cropland_cover</span>, <span class='va'>tree_canopy_cover</span>, <span class='va'>rain_mean_annual</span>, <span class='va'>isothermality</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/rename.html'>rename</a></span><span class='op'>(</span>Crop.Cover <span class='op'>=</span> <span class='va'>cropland_cover</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/rename.html'>rename</a></span><span class='op'>(</span>Tree.Canopy.Cover <span class='op'>=</span> <span class='va'>tree_canopy_cover</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/rename.html'>rename</a></span><span class='op'>(</span>Mean.Annual.Rainfall <span class='op'>=</span> <span class='va'>rain_mean_annual</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/rename.html'>rename</a></span><span class='op'>(</span>Isothermality <span class='op'>=</span> <span class='va'>isothermality</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'>drop_na</span><span class='op'>(</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/r/base/scale.html'>scale</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='va'>prcomp</span>
+
+<span class='va'>world_complete</span> <span class='op'>&lt;-</span> <span class='fu'>read_csv</span><span class='op'>(</span><span class='fu'><a href='https://here.r-lib.org//reference/here.html'>here</a></span><span class='op'>(</span><span class='st'>"_posts"</span>, <span class='st'>"2021-02-12-welcome"</span>, <span class='st'>"data"</span>, <span class='st'>"world_env_vars.csv"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'>drop_na</span><span class='op'>(</span><span class='va'>cropland_cover</span>, <span class='va'>tree_canopy_cover</span>, <span class='va'>rain_mean_annual</span>, <span class='va'>isothermality</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/pkg/janitor/man/clean_names.html'>clean_names</a></span><span class='op'>(</span><span class='op'>)</span>
+
+<span class='va'>world_pca</span> <span class='op'>&lt;-</span> <span class='fu'>autoplot</span><span class='op'>(</span><span class='va'>world_data</span>,
+         data <span class='op'>=</span> <span class='va'>world_complete</span>,
+         colour <span class='op'>=</span> <span class='st'>"ivory4"</span>,
+         loadings <span class='op'>=</span> <span class='cn'>TRUE</span>,
+         loadings.colour <span class='op'>=</span> <span class='st'>"green"</span>,
+         loadings.label <span class='op'>=</span> <span class='cn'>TRUE</span>,
+         loadings.label.hjust <span class='op'>=</span> <span class='fl'>1.1</span><span class='op'>)</span>
+  <span class='fu'>theme_minimal</span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
+    <span class='fu'>theme</span><span class='op'>(</span>legend.position <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>List of 93
+ $ line                      :List of 6
+  ..$ colour       : chr &quot;black&quot;
+  ..$ size         : num 0.5
+  ..$ linetype     : num 1
+  ..$ lineend      : chr &quot;butt&quot;
+  ..$ arrow        : logi FALSE
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_line&quot; &quot;element&quot;
+ $ rect                      :List of 5
+  ..$ fill         : chr &quot;white&quot;
+  ..$ colour       : chr &quot;black&quot;
+  ..$ size         : num 0.5
+  ..$ linetype     : num 1
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_rect&quot; &quot;element&quot;
+ $ text                      :List of 11
+  ..$ family       : chr &quot;&quot;
+  ..$ face         : chr &quot;plain&quot;
+  ..$ colour       : chr &quot;black&quot;
+  ..$ size         : num 11
+  ..$ hjust        : num 0.5
+  ..$ vjust        : num 0.5
+  ..$ angle        : num 0
+  ..$ lineheight   : num 0.9
+  ..$ margin       : &#39;margin&#39; num [1:4] 0points 0points 0points 0points
+  .. ..- attr(*, &quot;unit&quot;)= int 8
+  ..$ debug        : logi FALSE
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+ $ title                     : NULL
+ $ aspect.ratio              : NULL
+ $ axis.title                : NULL
+ $ axis.title.x              :List of 11
+  ..$ family       : NULL
+  ..$ face         : NULL
+  ..$ colour       : NULL
+  ..$ size         : NULL
+  ..$ hjust        : NULL
+  ..$ vjust        : num 1
+  ..$ angle        : NULL
+  ..$ lineheight   : NULL
+  ..$ margin       : &#39;margin&#39; num [1:4] 2.75points 0points 0points 0points
+  .. ..- attr(*, &quot;unit&quot;)= int 8
+  ..$ debug        : NULL
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+ $ axis.title.x.top          :List of 11
+  ..$ family       : NULL
+  ..$ face         : NULL
+  ..$ colour       : NULL
+  ..$ size         : NULL
+  ..$ hjust        : NULL
+  ..$ vjust        : num 0
+  ..$ angle        : NULL
+  ..$ lineheight   : NULL
+  ..$ margin       : &#39;margin&#39; num [1:4] 0points 0points 2.75points 0points
+  .. ..- attr(*, &quot;unit&quot;)= int 8
+  ..$ debug        : NULL
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+ $ axis.title.x.bottom       : NULL
+ $ axis.title.y              :List of 11
+  ..$ family       : NULL
+  ..$ face         : NULL
+  ..$ colour       : NULL
+  ..$ size         : NULL
+  ..$ hjust        : NULL
+  ..$ vjust        : num 1
+  ..$ angle        : num 90
+  ..$ lineheight   : NULL
+  ..$ margin       : &#39;margin&#39; num [1:4] 0points 2.75points 0points 0points
+  .. ..- attr(*, &quot;unit&quot;)= int 8
+  ..$ debug        : NULL
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+ $ axis.title.y.left         : NULL
+ $ axis.title.y.right        :List of 11
+  ..$ family       : NULL
+  ..$ face         : NULL
+  ..$ colour       : NULL
+  ..$ size         : NULL
+  ..$ hjust        : NULL
+  ..$ vjust        : num 0
+  ..$ angle        : num -90
+  ..$ lineheight   : NULL
+  ..$ margin       : &#39;margin&#39; num [1:4] 0points 0points 0points 2.75points
+  .. ..- attr(*, &quot;unit&quot;)= int 8
+  ..$ debug        : NULL
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+ $ axis.text                 :List of 11
+  ..$ family       : NULL
+  ..$ face         : NULL
+  ..$ colour       : chr &quot;grey30&quot;
+  ..$ size         : &#39;rel&#39; num 0.8
+  ..$ hjust        : NULL
+  ..$ vjust        : NULL
+  ..$ angle        : NULL
+  ..$ lineheight   : NULL
+  ..$ margin       : NULL
+  ..$ debug        : NULL
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+ $ axis.text.x               :List of 11
+  ..$ family       : NULL
+  ..$ face         : NULL
+  ..$ colour       : NULL
+  ..$ size         : NULL
+  ..$ hjust        : NULL
+  ..$ vjust        : num 1
+  ..$ angle        : NULL
+  ..$ lineheight   : NULL
+  ..$ margin       : &#39;margin&#39; num [1:4] 2.2points 0points 0points 0points
+  .. ..- attr(*, &quot;unit&quot;)= int 8
+  ..$ debug        : NULL
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+ $ axis.text.x.top           :List of 11
+  ..$ family       : NULL
+  ..$ face         : NULL
+  ..$ colour       : NULL
+  ..$ size         : NULL
+  ..$ hjust        : NULL
+  ..$ vjust        : num 0
+  ..$ angle        : NULL
+  ..$ lineheight   : NULL
+  ..$ margin       : &#39;margin&#39; num [1:4] 0points 0points 2.2points 0points
+  .. ..- attr(*, &quot;unit&quot;)= int 8
+  ..$ debug        : NULL
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+ $ axis.text.x.bottom        : NULL
+ $ axis.text.y               :List of 11
+  ..$ family       : NULL
+  ..$ face         : NULL
+  ..$ colour       : NULL
+  ..$ size         : NULL
+  ..$ hjust        : num 1
+  ..$ vjust        : NULL
+  ..$ angle        : NULL
+  ..$ lineheight   : NULL
+  ..$ margin       : &#39;margin&#39; num [1:4] 0points 2.2points 0points 0points
+  .. ..- attr(*, &quot;unit&quot;)= int 8
+  ..$ debug        : NULL
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+ $ axis.text.y.left          : NULL
+ $ axis.text.y.right         :List of 11
+  ..$ family       : NULL
+  ..$ face         : NULL
+  ..$ colour       : NULL
+  ..$ size         : NULL
+  ..$ hjust        : num 0
+  ..$ vjust        : NULL
+  ..$ angle        : NULL
+  ..$ lineheight   : NULL
+  ..$ margin       : &#39;margin&#39; num [1:4] 0points 0points 0points 2.2points
+  .. ..- attr(*, &quot;unit&quot;)= int 8
+  ..$ debug        : NULL
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+ $ axis.ticks                : list()
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_blank&quot; &quot;element&quot;
+ $ axis.ticks.x              : NULL
+ $ axis.ticks.x.top          : NULL
+ $ axis.ticks.x.bottom       : NULL
+ $ axis.ticks.y              : NULL
+ $ axis.ticks.y.left         : NULL
+ $ axis.ticks.y.right        : NULL
+ $ axis.ticks.length         : &#39;simpleUnit&#39; num 2.75points
+  ..- attr(*, &quot;unit&quot;)= int 8
+ $ axis.ticks.length.x       : NULL
+ $ axis.ticks.length.x.top   : NULL
+ $ axis.ticks.length.x.bottom: NULL
+ $ axis.ticks.length.y       : NULL
+ $ axis.ticks.length.y.left  : NULL
+ $ axis.ticks.length.y.right : NULL
+ $ axis.line                 : list()
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_blank&quot; &quot;element&quot;
+ $ axis.line.x               : NULL
+ $ axis.line.x.top           : NULL
+ $ axis.line.x.bottom        : NULL
+ $ axis.line.y               : NULL
+ $ axis.line.y.left          : NULL
+ $ axis.line.y.right         : NULL
+ $ legend.background         : list()
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_blank&quot; &quot;element&quot;
+ $ legend.margin             : &#39;margin&#39; num [1:4] 5.5points 5.5points 5.5points 5.5points
+  ..- attr(*, &quot;unit&quot;)= int 8
+ $ legend.spacing            : &#39;simpleUnit&#39; num 11points
+  ..- attr(*, &quot;unit&quot;)= int 8
+ $ legend.spacing.x          : NULL
+ $ legend.spacing.y          : NULL
+ $ legend.key                : list()
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_blank&quot; &quot;element&quot;
+ $ legend.key.size           : &#39;simpleUnit&#39; num 1.2lines
+  ..- attr(*, &quot;unit&quot;)= int 3
+ $ legend.key.height         : NULL
+ $ legend.key.width          : NULL
+ $ legend.text               :List of 11
+  ..$ family       : NULL
+  ..$ face         : NULL
+  ..$ colour       : NULL
+  ..$ size         : &#39;rel&#39; num 0.8
+  ..$ hjust        : NULL
+  ..$ vjust        : NULL
+  ..$ angle        : NULL
+  ..$ lineheight   : NULL
+  ..$ margin       : NULL
+  ..$ debug        : NULL
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+ $ legend.text.align         : NULL
+ $ legend.title              :List of 11
+  ..$ family       : NULL
+  ..$ face         : NULL
+  ..$ colour       : NULL
+  ..$ size         : NULL
+  ..$ hjust        : num 0
+  ..$ vjust        : NULL
+  ..$ angle        : NULL
+  ..$ lineheight   : NULL
+  ..$ margin       : NULL
+  ..$ debug        : NULL
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+ $ legend.title.align        : NULL
+ $ legend.position           : logi FALSE
+ $ legend.direction          : NULL
+ $ legend.justification      : chr &quot;center&quot;
+ $ legend.box                : NULL
+ $ legend.box.just           : NULL
+ $ legend.box.margin         : &#39;margin&#39; num [1:4] 0cm 0cm 0cm 0cm
+  ..- attr(*, &quot;unit&quot;)= int 1
+ $ legend.box.background     : list()
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_blank&quot; &quot;element&quot;
+ $ legend.box.spacing        : &#39;simpleUnit&#39; num 11points
+  ..- attr(*, &quot;unit&quot;)= int 8
+ $ panel.background          : list()
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_blank&quot; &quot;element&quot;
+ $ panel.border              : list()
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_blank&quot; &quot;element&quot;
+ $ panel.spacing             : &#39;simpleUnit&#39; num 5.5points
+  ..- attr(*, &quot;unit&quot;)= int 8
+ $ panel.spacing.x           : NULL
+ $ panel.spacing.y           : NULL
+ $ panel.grid                :List of 6
+  ..$ colour       : chr &quot;grey92&quot;
+  ..$ size         : NULL
+  ..$ linetype     : NULL
+  ..$ lineend      : NULL
+  ..$ arrow        : logi FALSE
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_line&quot; &quot;element&quot;
+ $ panel.grid.major          : NULL
+ $ panel.grid.minor          :List of 6
+  ..$ colour       : NULL
+  ..$ size         : &#39;rel&#39; num 0.5
+  ..$ linetype     : NULL
+  ..$ lineend      : NULL
+  ..$ arrow        : logi FALSE
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_line&quot; &quot;element&quot;
+ $ panel.grid.major.x        : NULL
+ $ panel.grid.major.y        : NULL
+ $ panel.grid.minor.x        : NULL
+ $ panel.grid.minor.y        : NULL
+ $ panel.ontop               : logi FALSE
+ $ plot.background           : list()
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_blank&quot; &quot;element&quot;
+ $ plot.title                :List of 11
+  ..$ family       : NULL
+  ..$ face         : NULL
+  ..$ colour       : NULL
+  ..$ size         : &#39;rel&#39; num 1.2
+  ..$ hjust        : num 0
+  ..$ vjust        : num 1
+  ..$ angle        : NULL
+  ..$ lineheight   : NULL
+  ..$ margin       : &#39;margin&#39; num [1:4] 0points 0points 5.5points 0points
+  .. ..- attr(*, &quot;unit&quot;)= int 8
+  ..$ debug        : NULL
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+ $ plot.title.position       : chr &quot;panel&quot;
+ $ plot.subtitle             :List of 11
+  ..$ family       : NULL
+  ..$ face         : NULL
+  ..$ colour       : NULL
+  ..$ size         : NULL
+  ..$ hjust        : num 0
+  ..$ vjust        : num 1
+  ..$ angle        : NULL
+  ..$ lineheight   : NULL
+  ..$ margin       : &#39;margin&#39; num [1:4] 0points 0points 5.5points 0points
+  .. ..- attr(*, &quot;unit&quot;)= int 8
+  ..$ debug        : NULL
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+ $ plot.caption              :List of 11
+  ..$ family       : NULL
+  ..$ face         : NULL
+  ..$ colour       : NULL
+  ..$ size         : &#39;rel&#39; num 0.8
+  ..$ hjust        : num 1
+  ..$ vjust        : num 1
+  ..$ angle        : NULL
+  ..$ lineheight   : NULL
+  ..$ margin       : &#39;margin&#39; num [1:4] 5.5points 0points 0points 0points
+  .. ..- attr(*, &quot;unit&quot;)= int 8
+  ..$ debug        : NULL
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+ $ plot.caption.position     : chr &quot;panel&quot;
+ $ plot.tag                  :List of 11
+  ..$ family       : NULL
+  ..$ face         : NULL
+  ..$ colour       : NULL
+  ..$ size         : &#39;rel&#39; num 1.2
+  ..$ hjust        : num 0.5
+  ..$ vjust        : num 0.5
+  ..$ angle        : NULL
+  ..$ lineheight   : NULL
+  ..$ margin       : NULL
+  ..$ debug        : NULL
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+ $ plot.tag.position         : chr &quot;topleft&quot;
+ $ plot.margin               : &#39;margin&#39; num [1:4] 5.5points 5.5points 5.5points 5.5points
+  ..- attr(*, &quot;unit&quot;)= int 8
+ $ strip.background          : list()
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_blank&quot; &quot;element&quot;
+ $ strip.background.x        : NULL
+ $ strip.background.y        : NULL
+ $ strip.placement           : chr &quot;inside&quot;
+ $ strip.text                :List of 11
+  ..$ family       : NULL
+  ..$ face         : NULL
+  ..$ colour       : chr &quot;grey10&quot;
+  ..$ size         : &#39;rel&#39; num 0.8
+  ..$ hjust        : NULL
+  ..$ vjust        : NULL
+  ..$ angle        : NULL
+  ..$ lineheight   : NULL
+  ..$ margin       : &#39;margin&#39; num [1:4] 4.4points 4.4points 4.4points 4.4points
+  .. ..- attr(*, &quot;unit&quot;)= int 8
+  ..$ debug        : NULL
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+ $ strip.text.x              : NULL
+ $ strip.text.y              :List of 11
+  ..$ family       : NULL
+  ..$ face         : NULL
+  ..$ colour       : NULL
+  ..$ size         : NULL
+  ..$ hjust        : NULL
+  ..$ vjust        : NULL
+  ..$ angle        : num -90
+  ..$ lineheight   : NULL
+  ..$ margin       : NULL
+  ..$ debug        : NULL
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+ $ strip.switch.pad.grid     : &#39;simpleUnit&#39; num 2.75points
+  ..- attr(*, &quot;unit&quot;)= int 8
+ $ strip.switch.pad.wrap     : &#39;simpleUnit&#39; num 2.75points
+  ..- attr(*, &quot;unit&quot;)= int 8
+ $ strip.text.y.left         :List of 11
+  ..$ family       : NULL
+  ..$ face         : NULL
+  ..$ colour       : NULL
+  ..$ size         : NULL
+  ..$ hjust        : NULL
+  ..$ vjust        : NULL
+  ..$ angle        : num 90
+  ..$ lineheight   : NULL
+  ..$ margin       : NULL
+  ..$ debug        : NULL
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+ - attr(*, &quot;class&quot;)= chr [1:2] &quot;theme&quot; &quot;gg&quot;
+ - attr(*, &quot;complete&quot;)= logi TRUE
+ - attr(*, &quot;validate&quot;)= logi TRUE</code></pre>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>world_pca</span>
+</code></pre>
+</div>
+<p><img src="welcome_files/figure-html5/unnamed-chunk-1-1.png" width="624" /></p>
+</div>
+<h4 id="give-the-world-pca-plot-a-nice-caption">Give the World PCA plot a nice caption</h4>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>world_pca</span>
+</code></pre>
+</div>
+<div class="figure"><span id="fig:unnamed-chunk-2"></span>
+<img src="welcome_files/figure-html5/unnamed-chunk-2-1.png" alt="**Figure 1**. Princple components analysis exploring relationships between isothermality, mean annual rainfall, tree canopy cover, and crop cover for 231 countries." width="624" />
+<p class="caption">
+Figure 1: <strong>Figure 1</strong>. Princple components analysis exploring relationships between isothermality, mean annual rainfall, tree canopy cover, and crop cover for 231 countries.
+</p>
+</div>
+</div>
+<h4 id="summary-of-pca-exploration">Summary of PCA exploration</h4>
+<ul>
+<li>Mean annual rainfall is positively correlated with tree canopy cover.
+<ul>
+<li>This was unsurprising as I expected additional rainfall to be associated with greater tree canopy cover.</li>
+</ul></li>
+<li>Crop cover is uncorrelated with mean annual rainfall and tree canopy cover
+<ul>
+<li>This was somewhat surprising as I expected crop cover and mean annual rainfall to be correlated. That may have been the case historically but I suppose in most places today crops are artificially irrigated and not dependent on rainfall.</li>
+</ul></li>
+<li>Isothermality is slightly negatively correlated with crop cover.
+<ul>
+<li>Interesting because in essence what this means is that when you have a greater level of temperature fluctuations relative to the annual fluctuation, cropland coverage is expected to decrease. This makes sense because crops tend to like consistent temperatures within a relatively narrow range. When you have large fluctuations, you’re less likely to have productive fields.</li>
+</ul></li>
+<li>83% of the variance in the data is captured by the evaluating these four variables.</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
