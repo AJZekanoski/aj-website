@@ -1,0 +1,123 @@
+---
+title: "Text and Sentiment Analysis"
+description: |
+  Text analysis of cowboy songs
+theme: aj_theme.css
+author:
+  - name: AJ Zekanoski
+date: 2021-03-13
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(tidytext)
+library(textdata)
+library(pdftools)
+library(ggwordcloud)
+```
+
+Read in text of *Songs of the Cattle Trail and Cow Camp*.
+```{r, cache = TRUE}
+cowboys_text <- pdf_text("cowboys.pdf")
+```
+
+Check to see one of the pages.
+```{r}
+cowboys34 <- cowboys_text[34]
+
+cowboys34
+```
+
+Change it to a tidy dataframe.
+```{r}
+cowboy_tidy <- data.frame(cowboys_text) %>% 
+  mutate(text_full = str_split(cowboys_text, pattern = '\\n')) %>% 
+  unnest(text_full) %>% 
+  mutate(text_full = str_trim(text_full))
+```
+
+Take out all the introductory pages that don't have cowboy songs.
+```{r}
+cowboy_df <- cowboy_tidy %>% 
+  slice(-(1:370))
+```
+
+Give a new row for each word. 
+```{r}
+cowboy_tokens <- cowboy_df %>% 
+  unnest_tokens(word, text_full) %>% 
+  dplyr::select(-cowboys_text)
+```
+
+Count all the words up and eliminate all the numbers in the beginning. 
+```{r}
+cowboy_wordcount <- cowboy_tokens %>% 
+  count(word) %>% 
+  slice(-(1:155))
+```
+
+Time to remove stop words. 
+```{r}
+cowboy_nonstop_words <- cowboy_tokens %>% 
+  anti_join(stop_words)
+```
+
+Recount them and get rid of the page numbers
+```{r}
+nonstop_counts <- cowboy_nonstop_words %>% 
+  count(word) %>% 
+  slice(-(1:154))
+```
+
+Let's look at the top 100 words used in *Songs of the Cattle Trail and Cow Camp*.
+```{r}
+top_100_words <- nonstop_counts %>% 
+  arrange(-n) %>% 
+  slice(1:100) 
+```
+
+Some cowboy specific stop words snuck through to this step so we're going to manually eliminate them. They are: til, em, fer, yer, git, o'er, yo, thar, and twas. Leaves us with the 91 most used non-stop words.
+
+```{r}
+top_words <- top_100_words %>% 
+  slice(-c(4,5,6,16,43,45,49,53,88))
+```
+
+Let's make a word cloud for *Songs of the Cattle Trail and Cow Camp*.
+```{r}
+cowboy_cloud <- ggplot(data = top_words, aes(label = word)) +
+  geom_text_wordcloud(aes(color = n, size = n), shape = "circle") +
+  scale_size_area(max_size = 8) +
+  scale_color_gradientn(colors = c("brown","yellow","red")) +
+  theme_minimal()
+
+cowboy_cloud
+```
+
+- Trail is the most frequently used word in the book
+- Surprisingly there are no yeehaws
+
+Time to do sentiment analysis on frequently used cowboy words
+```{r}
+cowboy_afinn <- top_words %>% 
+  inner_join(get_sentiments("afinn"))
+```
+
+```{r}
+
+# Plot them: 
+ggplot(data = cowboy_afinn, aes(x = value, y = n, fill = word)) +
+  geom_col() +
+  labs(x = "Sentiment Values", y = "Number of Uses", title = "Most frequent sentimental words in Songs of the Cattle Trail and Cowcamp") +
+  theme_minimal()
+
+```
+
+- A lot of love in cowboy songs, it's the most frequently used sentimental word
+- The most common negative words by far were about death. Cowboys also have to contend with things that broke (or perhaps being broke financially), getting cut, and fighting.
+
+Source Citation: Lomax, Alan. Songs of the Cattle Trail and Cow Camp. Duell, Sloan, and Pearce, 1909. Google Books, source:"http://books.google.com/books?id=XqnNYZW9olsC&amp;oe=UTF-8". 

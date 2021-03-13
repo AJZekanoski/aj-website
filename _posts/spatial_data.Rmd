@@ -24,7 +24,7 @@ library(stars)
 
 ```{r}
 #Read in Oil Spill Data
-oil_spill <- read_sf(here("_posts", "Oil_Spill_Incident_Tracking_%5Bds394%5D-shp"), layer = "Oil_Spill_Incident_Tracking_%5Bds394%5D") %>% 
+oil_spill <- read_sf(here("_posts", "oil_spill", "Oil_Spill_Incident_Tracking_%5Bds394%5D-shp"), layer = "Oil_Spill_Incident_Tracking_%5Bds394%5D") %>% 
   clean_names() %>% 
   rename(county = localecoun)
 ```
@@ -40,9 +40,7 @@ ca_county <- st_transform(ca_county, st_crs(oil_spill))
 
 ```
 
-```{r}
 
-```
 
 ```{r}
 #looking at inland spills counts per county
