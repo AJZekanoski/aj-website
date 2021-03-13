@@ -1,8 +1,16 @@
 ---
 title: "About Me"
-image: "aj_shelby_canyonlands.JPG"
-output:
-  postcards::jolla
+
 ---
- 
-Hello, I'm AJ. Im going to think of some stuff to say about myself. 
+
+![Shelby and I at Canyonlands NP](aj_shelby_canyonlands.png)
+
+Hello, I'm AJ. I'm a second year Master's student at the Bren School of Environmental Science & Management at UC Santa Barbara. Despite a devastating global pandemic, I've loved my time living in Santa Barbara. Mountain biking, hiking, kayaking, and hanging out at the beach has left me with an immense feeling of gratitude for being able to live in such a beautiful place. 
+
+![Platform Holly at Sunset](yaksunset.png)
+
+My work at Bren has been centered around my Group Project: Wild Pig Management Planning at The Jack and Laura Dangermond Preserve. Wild pigs are a destructive invasive species and it's been exciting and rewarding to work with such great people to develop real solutions that will help our client.
+
+![Me conducting a wild pig coastal access survey at Dangermond](aj_dangermond.png)
+
+My goals for the immediate future are to continue to work on environmental projects that are pressing and get me outside. While I'd love to stay in Santa Barbara, I'm expanding the search area for my first job out of Bren and can't wait to hit the ground running with important conservation work. I'm hopeful that the future holds a job I enjoy in a place where Bonnie the dog can run and play. I also can't wait for my first wild pig pulled pork sandwich, stay tuned!
